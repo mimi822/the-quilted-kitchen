@@ -1,56 +1,12 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Quilted Kitchen</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    :root{--brand:#6b4f4f;--accent:#a3b18a;--cream:#f7f3ee}
-    .btn{background:var(--brand);color:#fff;border-radius:.75rem;padding:.6rem 1rem;display:inline-flex;gap:.5rem;align-items:center}
-    .card{background:#fff;border:1px solid #e5e5e5;border-radius:1rem;padding:1.25rem}
-    body{background:var(--cream)}
-  </style>
-</head>
-<body class="text-neutral-800">
-  <header class="border-b bg-white/80 backdrop-blur">
-    <div class="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
-      <div class="font-semibold">The Quilted Kitchen</div>
-      <nav class="hidden md:flex gap-6 text-sm">
-        <a href="#menu">Menu</a><a href="#preorder">Pre‑Order</a><a href="#contact">Contact</a>
-      </nav>
-      <a href="#preorder" class="btn">Order</a>
-    </div>
-  </header>
-
-  <main class="max-w-5xl mx-auto px-4 py-12">
-    <h1 class="text-4xl font-semibold">Hand‑crafted bakes, <span class="text-[var(--accent)]">stitched with love.</span></h1>
-    <p class="mt-3 max-w-xl text-neutral-600">Small‑batch bakery inside The Rustic Roast • Taylorsville, NC.</p>
-
-    <section id="menu" class="mt-10 grid md:grid-cols-3 gap-4">
-      <div class="card"><h3 class="font-semibold">Bagels</h3><ul class="list-disc pl-5 text-sm mt-2"><li>Everything</li><li>Sesame</li><li>Asiago</li></ul></div>
-      <div class="card"><h3 class="font-semibold">Cookies</h3><ul class="list-disc pl-5 text-sm mt-2"><li>Chocolate Chip</li><li>Cinnamon Bun</li><li>Caramel Pear + Pecan</li></ul></div>
-      <div class="card"><h3 class="font-semibold">Pastries</h3><ul class="list-disc pl-5 text-sm mt-2"><li>Lemon & Berries Puff</li><li>Apple Hand Pies</li><li>Peach Puff</li></ul></div>
-    </section>
-
-    <section id="preorder" class="mt-10 card">
-      <h2 class="font-semibold text-lg">Pre‑Order</h2>
-      <form class="grid gap-3 mt-3" onsubmit="event.preventDefault(); alert('Thanks! (demo form)')">
-        <input class="border rounded px-3 py-2" placeholder="Name" required>
-        <input class="border rounded px-3 py-2" type="email" placeholder="Email" required>
-        <textarea class="border rounded px-3 py-2" rows="4" placeholder="Your order details…"></textarea>
-        <button class="btn">Submit</button>
-      </form>
-    </section>
-
-    <section id="contact" class="mt-10 card">
-      <h2 class="font-semibold text-lg">Get in Touch</h2>
-      <p class="text-sm mt-2">Email: <a class="underline" href="mailto:hello@thequiltedkitchen.com">hello@thequiltedkitchen.com</a></p>
-      <p class="text-sm">Phone: <a class="underline" href="tel:+10000000000">(000) 000‑0000</a></p>
-    </section>
-  </main>
-
-  <footer class="border-t text-center text-xs py-4 bg-white mt-12">© <span id="y"></span> The Quilted Kitchen</footer>
-  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Quilted Kitchen</title>
+  </head>
+  <body class="bg-[#f7f3ee]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
