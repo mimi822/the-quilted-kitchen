@@ -1,0 +1,1 @@
+Place your local images here if you prefer not to use external image URLs.
